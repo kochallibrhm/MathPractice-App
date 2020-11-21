@@ -1,5 +1,5 @@
 # MathPractice-App
-> An Android app that I created for my brother to practice math
+> An Android app that I created for my brother to practice math. Choose which operation you want and start practice. Generates new questions as long as the answers are correct.
 
 ## Screencaps within the App
 
