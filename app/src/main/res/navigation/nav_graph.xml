@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/FirstFragment">
+
+    <fragment
+        android:id="@+id/FirstFragment"
+        android:name="com.example.mathpractice.FirstFragment"
+        android:label="@string/first_fragment_label"
+        tools:layout="@layout/fragment_first">
+
+        <action android:id="@+id/action_FirstFragment_to_Cikarma"
+            app:destination="@id/CikarmaFragment"/>
+
+        <action
+            android:id="@+id/action_FirstFragment_to_ToplamaFragment"
+            app:destination="@id/ToplamaFragment" />
+
+        <action
+            android:id="@+id/action_FirstFragment_to_Carpma"
+            app:destination="@+id/CarpmaFragment"/>
+
+        <action
+            android:id="@+id/action_FirstFragment_to_Bolme"
+            app:destination="@+id/BolmeFragment"/>
+    </fragment>
+    <fragment
+        android:id="@+id/ToplamaFragment"
+        android:name="com.example.mathpractice.ToplamaFragment"
+        android:label="@string/second_fragment_label"
+        tools:layout="@layout/fragment_toplama">
+
+        <action
+            android:id="@+id/action_SecondFragment_to_FirstFragment"
+            app:destination="@id/FirstFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/CikarmaFragment"
+        android:name="com.example.mathpractice.CikarmaFragment"
+        android:label="@string/cikarma"
+        tools:layout="@layout/fragment_cikarma">
+
+    <action android:id="@+id/action_CikarmatoFirst"
+        app:destination="@id/FirstFragment"/>
+    </fragment>
+
+    <fragment
+        android:id="@+id/CarpmaFragment"
+        android:name="com.example.mathpractice.CarpmaFragment"
+        android:label="@string/carpma"
+        tools:layout="@layout/fragment_carpma">
+
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/BolmeFragment"
+        android:name="com.example.mathpractice.BolmeFragment"
+        android:label="@string/bölme"
+        tools:layout="@layout/fragment_bolme">
+
+    </fragment>
+</navigation>
